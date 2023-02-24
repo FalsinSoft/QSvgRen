@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QSvgRenTest", "QSvgRenTest.vcxproj", "{6349946A-2AA7-40E9-866E-3FE1A9B8AABC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{310FEE68-866B-4A86-B0DC-8BA01873AB27} = {310FEE68-866B-4A86-B0DC-8BA01873AB27}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QSvgRen", "..\QSvgRen\QSvgRen.vcxproj", "{310FEE68-866B-4A86-B0DC-8BA01873AB27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6349946A-2AA7-40E9-866E-3FE1A9B8AABC}.Debug|x64.ActiveCfg = Debug|x64
+		{6349946A-2AA7-40E9-866E-3FE1A9B8AABC}.Debug|x64.Build.0 = Debug|x64
+		{6349946A-2AA7-40E9-866E-3FE1A9B8AABC}.Release|x64.ActiveCfg = Release|x64
+		{6349946A-2AA7-40E9-866E-3FE1A9B8AABC}.Release|x64.Build.0 = Release|x64
+		{310FEE68-866B-4A86-B0DC-8BA01873AB27}.Debug|x64.ActiveCfg = Debug|x64
+		{310FEE68-866B-4A86-B0DC-8BA01873AB27}.Debug|x64.Build.0 = Debug|x64
+		{310FEE68-866B-4A86-B0DC-8BA01873AB27}.Release|x64.ActiveCfg = Release|x64
+		{310FEE68-866B-4A86-B0DC-8BA01873AB27}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E20D2423-7A9C-487A-BAA1-29EDB3563FD8}
+	EndGlobalSection
+EndGlobal
