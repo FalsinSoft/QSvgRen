@@ -1,0 +1,1090 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Header Files\svgren">
+      <UniqueIdentifier>{bc1a457c-b79d-48a6-8aa2-b6cf016f2136}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\svgren">
+      <UniqueIdentifier>{5bd3b948-1d14-423b-a039-95b61a1c0901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utki">
+      <UniqueIdentifier>{53f7462b-4ffa-4d06-adb4-935561bb44fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\svgdom">
+      <UniqueIdentifier>{fba430a9-c36f-4527-a04c-dae6a61d5194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\svgdom">
+      <UniqueIdentifier>{c29221a8-0ad0-4e42-8140-086f6eb8f76d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\papki">
+      <UniqueIdentifier>{4fdd28cb-0c55-4326-9c81-174dd40697af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\r4">
+      <UniqueIdentifier>{cb64f9f3-68e6-4acb-ae6c-33834c68d6ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\mikroxml">
+      <UniqueIdentifier>{17100772-b2b1-4ea5-8c9c-af8bbe6543a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mikroxml">
+      <UniqueIdentifier>{f4d36a46-e201-4a64-91e6-c9cdf17fd1af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\cssom">
+      <UniqueIdentifier>{dd0c7bfe-4cd9-4279-935f-82053a2e9019}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cssom">
+      <UniqueIdentifier>{35e27728-7afc-4cd1-b761-9b8b6c456248}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utki">
+      <UniqueIdentifier>{cbeaeebe-13d2-44d3-a58a-f998d8bd1196}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utki\fast_float">
+      <UniqueIdentifier>{f4e29b29-b550-48da-a232-20251aa58dbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\papki\unzip">
+      <UniqueIdentifier>{ce7190db-2d92-47b9-91ec-1838aad8f4db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\papki">
+      <UniqueIdentifier>{a7051f52-5716-47fa-b59e-762f80c00889}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\papki\unzip">
+      <UniqueIdentifier>{dc708164-fe0f-45ed-974e-ea0c1152a123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\zlib">
+      <UniqueIdentifier>{83bc5920-082a-4d1c-8732-3889e0de2680}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\zlib">
+      <UniqueIdentifier>{4fda0314-9c93-4a0a-99fc-84ea67f1cdce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\agg">
+      <UniqueIdentifier>{99280202-121d-4537-ba25-3a2ee7a6cea5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\agg">
+      <UniqueIdentifier>{d1afa0f6-bc6f-4423-8c68-b9c946a6d014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\agg\ctrl">
+      <UniqueIdentifier>{a355904a-1f16-4a93-826a-2a1876bbfee0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\agg\ctrl">
+      <UniqueIdentifier>{6c60a827-99b0-4592-bbb6-a4aa874eb2bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\agg\util">
+      <UniqueIdentifier>{ba7dbf2e-c56f-4221-98c9-2d6e3b454d6c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="QSvgRen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="svgren\canvas.hxx">
+      <Filter>Header Files\svgren</Filter>
+    </ClInclude>
+    <ClInclude Include="svgren\config.hxx">
+      <Filter>Header Files\svgren</Filter>
+    </ClInclude>
+    <ClInclude Include="svgren\filter_applier.hxx">
+      <Filter>Header Files\svgren</Filter>
+    </ClInclude>
+    <ClInclude Include="svgren\render.hpp">
+      <Filter>Header Files\svgren</Filter>
+    </ClInclude>
+    <ClInclude Include="svgren\renderer.hxx">
+      <Filter>Header Files\svgren</Filter>
+    </ClInclude>
+    <ClInclude Include="svgren\surface.hxx">
+      <Filter>Header Files\svgren</Filter>
+    </ClInclude>
+    <ClInclude Include="svgren\util.hxx">
+      <Filter>Header Files\svgren</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\elements\aspect_ratioed.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\util\casters.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\util\cloner.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\config.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\elements\container.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\elements\coordinate_units.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\dom.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\elements\element.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\elements\filter.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\util\finder_by_class.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\util\finder_by_id.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\util\finder_by_tag.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\elements\gradients.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\elements\image_element.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\length.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\malformed_svg_error.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\parser.hxx">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\elements\rectangle.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\elements\referencing.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\elements\shapes.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\util\stream_writer.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\elements\structurals.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\elements\style.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\util\style_stack.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\util\style_stack_cache.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\elements\styleable.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\elements\text_element.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\elements\transformable.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\util.hxx">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\elements\view_boxed.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="svgdom\visitor.hpp">
+      <Filter>Header Files\svgdom</Filter>
+    </ClInclude>
+    <ClInclude Include="r4\matrix.hpp">
+      <Filter>Header Files\r4</Filter>
+    </ClInclude>
+    <ClInclude Include="r4\quaternion.hpp">
+      <Filter>Header Files\r4</Filter>
+    </ClInclude>
+    <ClInclude Include="r4\rectangle.hpp">
+      <Filter>Header Files\r4</Filter>
+    </ClInclude>
+    <ClInclude Include="r4\segment2.hpp">
+      <Filter>Header Files\r4</Filter>
+    </ClInclude>
+    <ClInclude Include="r4\vector.hpp">
+      <Filter>Header Files\r4</Filter>
+    </ClInclude>
+    <ClInclude Include="mikroxml\mikroxml.hpp">
+      <Filter>Header Files\mikroxml</Filter>
+    </ClInclude>
+    <ClInclude Include="cssom\om.hpp">
+      <Filter>Header Files\cssom</Filter>
+    </ClInclude>
+    <ClInclude Include="cssom\parser.hpp">
+      <Filter>Header Files\cssom</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\config.hpp">
+      <Filter>Header Files\utki</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\debug.hpp">
+      <Filter>Header Files\utki</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\destructable.hpp">
+      <Filter>Header Files\utki</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\flags.hpp">
+      <Filter>Header Files\utki</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\linq.hpp">
+      <Filter>Header Files\utki</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\macros.hpp">
+      <Filter>Header Files\utki</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\math.hpp">
+      <Filter>Header Files\utki</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\shared.hpp">
+      <Filter>Header Files\utki</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\singleton.hpp">
+      <Filter>Header Files\utki</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\span.hpp">
+      <Filter>Header Files\utki</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\spin_lock.hpp">
+      <Filter>Header Files\utki</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\string.hpp">
+      <Filter>Header Files\utki</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\time.hpp">
+      <Filter>Header Files\utki</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\tree.hpp">
+      <Filter>Header Files\utki</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\types.hpp">
+      <Filter>Header Files\utki</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\unicode.hpp">
+      <Filter>Header Files\utki</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\util.hpp">
+      <Filter>Header Files\utki</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\windows.hpp">
+      <Filter>Header Files\utki</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\fast_float\ascii_number.hxx">
+      <Filter>Header Files\utki\fast_float</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\fast_float\decimal_to_binary.hxx">
+      <Filter>Header Files\utki\fast_float</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\fast_float\fast_float.hxx">
+      <Filter>Header Files\utki\fast_float</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\fast_float\fast_table.hxx">
+      <Filter>Header Files\utki\fast_float</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\fast_float\float_common.hxx">
+      <Filter>Header Files\utki\fast_float</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\fast_float\parse_number.hxx">
+      <Filter>Header Files\utki\fast_float</Filter>
+    </ClInclude>
+    <ClInclude Include="utki\fast_float\simple_decimal_conversion.hxx">
+      <Filter>Header Files\utki\fast_float</Filter>
+    </ClInclude>
+    <ClInclude Include="papki\unzip\crypt.hxx">
+      <Filter>Header Files\papki\unzip</Filter>
+    </ClInclude>
+    <ClInclude Include="papki\unzip\ioapi.hxx">
+      <Filter>Header Files\papki\unzip</Filter>
+    </ClInclude>
+    <ClInclude Include="papki\unzip\unzip.hxx">
+      <Filter>Header Files\papki\unzip</Filter>
+    </ClInclude>
+    <ClInclude Include="papki\file.hpp">
+      <Filter>Header Files\papki</Filter>
+    </ClInclude>
+    <ClInclude Include="papki\fs_file.hpp">
+      <Filter>Header Files\papki</Filter>
+    </ClInclude>
+    <ClInclude Include="papki\root_dir.hpp">
+      <Filter>Header Files\papki</Filter>
+    </ClInclude>
+    <ClInclude Include="papki\span_file.hpp">
+      <Filter>Header Files\papki</Filter>
+    </ClInclude>
+    <ClInclude Include="papki\util.hpp">
+      <Filter>Header Files\papki</Filter>
+    </ClInclude>
+    <ClInclude Include="papki\vector_file.hpp">
+      <Filter>Header Files\papki</Filter>
+    </ClInclude>
+    <ClInclude Include="papki\zip_file.hpp">
+      <Filter>Header Files\papki</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\crc32.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\deflate.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\gzguts.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inffast.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inffixed.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inflate.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inftrees.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\trees.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zconf.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zlib.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zutil.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_alpha_mask_u8.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_arc.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_array.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_arrowhead.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_basics.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_bezier_arc.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_bitset_iterator.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_blur.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_bounding_rect.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_bspline.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_clip_liang_barsky.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_color_gray.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_color_rgba.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_config.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_conv_adaptor_vcgen.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_conv_adaptor_vpgen.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_conv_bspline.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_conv_clip_polygon.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_conv_clip_polyline.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_conv_close_polygon.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_conv_concat.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_conv_contour.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_conv_curve.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_conv_dash.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_conv_gpc.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_conv_marker.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_conv_marker_adaptor.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_conv_segmentator.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_conv_shorten_path.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_conv_smooth_poly1.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_conv_stroke.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_conv_transform.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_conv_unclose_polygon.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_curves.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_dda_line.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_ellipse.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_ellipse_bresenham.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_embedded_raster_fonts.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_font_cache_manager.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_font_cache_manager2.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_gamma_functions.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_gamma_lut.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_glyph_raster_bin.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_gradient_lut.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_gsv_text.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_image_accessors.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_image_filters.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_line_aa_basics.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_math.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_math_stroke.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_path_length.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_path_storage.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_path_storage_integer.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_pattern_filters_rgba.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_pixfmt_amask_adaptor.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_pixfmt_base.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_pixfmt_gray.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_pixfmt_rgb.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_pixfmt_rgb_packed.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_pixfmt_rgba.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_pixfmt_transposer.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_rasterizer_cells_aa.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_rasterizer_compound_aa.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_rasterizer_outline.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_rasterizer_outline_aa.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_rasterizer_scanline_aa.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_rasterizer_scanline_aa_nogamma.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_rasterizer_sl_clip.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_renderer_base.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_renderer_markers.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_renderer_mclip.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_renderer_outline_aa.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_renderer_outline_image.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_renderer_primitives.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_renderer_raster_text.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_renderer_scanline.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_rendering_buffer.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_rendering_buffer_dynarow.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_rounded_rect.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_scanline_bin.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_scanline_boolean_algebra.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_scanline_p.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_scanline_storage_aa.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_scanline_storage_bin.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_scanline_u.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_shorten_path.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_simul_eq.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_span_allocator.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_span_converter.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_span_gouraud.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_span_gouraud_gray.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_span_gouraud_rgba.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_span_gradient.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_span_gradient_alpha.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_span_gradient_contour.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_span_gradient_image.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_span_image_filter.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_span_image_filter_gray.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_span_image_filter_rgb.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_span_image_filter_rgba.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_span_interpolator_adaptor.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_span_interpolator_linear.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_span_interpolator_persp.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_span_interpolator_trans.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_span_pattern_gray.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_span_pattern_rgb.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_span_pattern_rgba.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_span_solid.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_span_subdiv_adaptor.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_trans_affine.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_trans_bilinear.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_trans_double_path.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_trans_perspective.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_trans_single_path.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_trans_viewport.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_trans_warp_magnifier.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_vcgen_bspline.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_vcgen_contour.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_vcgen_dash.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_vcgen_markers_term.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_vcgen_smooth_poly1.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_vcgen_stroke.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_vcgen_vertex_sequence.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_vertex_sequence.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_vpgen_clip_polygon.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_vpgen_clip_polyline.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\agg_vpgen_segmentator.h">
+      <Filter>Header Files\agg</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\ctrl\agg_bezier_ctrl.h">
+      <Filter>Header Files\agg\ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\ctrl\agg_cbox_ctrl.h">
+      <Filter>Header Files\agg\ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\ctrl\agg_ctrl.h">
+      <Filter>Header Files\agg\ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\ctrl\agg_gamma_ctrl.h">
+      <Filter>Header Files\agg\ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\ctrl\agg_gamma_spline.h">
+      <Filter>Header Files\agg\ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\ctrl\agg_polygon_ctrl.h">
+      <Filter>Header Files\agg\ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\ctrl\agg_rbox_ctrl.h">
+      <Filter>Header Files\agg\ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\ctrl\agg_scale_ctrl.h">
+      <Filter>Header Files\agg\ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\ctrl\agg_slider_ctrl.h">
+      <Filter>Header Files\agg\ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\ctrl\agg_spline_ctrl.h">
+      <Filter>Header Files\agg\ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\util\agg_color_conv.h">
+      <Filter>Header Files\agg\util</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\util\agg_color_conv_rgb8.h">
+      <Filter>Header Files\agg\util</Filter>
+    </ClInclude>
+    <ClInclude Include="agg\util\agg_color_conv_rgb16.h">
+      <Filter>Header Files\agg\util</Filter>
+    </ClInclude>
+    <ClInclude Include="QSvgRen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="svgren\canvas.cpp">
+      <Filter>Source Files\svgren</Filter>
+    </ClCompile>
+    <ClCompile Include="svgren\filter_applier.cpp">
+      <Filter>Source Files\svgren</Filter>
+    </ClCompile>
+    <ClCompile Include="svgren\render.cpp">
+      <Filter>Source Files\svgren</Filter>
+    </ClCompile>
+    <ClCompile Include="svgren\renderer.cpp">
+      <Filter>Source Files\svgren</Filter>
+    </ClCompile>
+    <ClCompile Include="svgren\surface.cpp">
+      <Filter>Source Files\svgren</Filter>
+    </ClCompile>
+    <ClCompile Include="svgren\util.cpp">
+      <Filter>Source Files\svgren</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\dom.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\length.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\parser.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\util.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\visitor.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\util\cloner.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\util\finder_by_class.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\util\finder_by_id.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\util\finder_by_tag.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\util\stream_writer.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\util\style_stack.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\util\style_stack_cache.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\elements\aspect_ratioed.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\elements\element.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\elements\filter.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\elements\gradients.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\elements\image_element.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\elements\rectangle.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\elements\referencing.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\elements\shapes.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\elements\structurals.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\elements\style.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\elements\styleable.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\elements\text_element.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\elements\transformable.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="svgdom\elements\view_boxed.cpp">
+      <Filter>Source Files\svgdom</Filter>
+    </ClCompile>
+    <ClCompile Include="mikroxml\mikroxml.cpp">
+      <Filter>Source Files\mikroxml</Filter>
+    </ClCompile>
+    <ClCompile Include="cssom\om.cpp">
+      <Filter>Source Files\cssom</Filter>
+    </ClCompile>
+    <ClCompile Include="cssom\parser.cpp">
+      <Filter>Source Files\cssom</Filter>
+    </ClCompile>
+    <ClCompile Include="utki\debug.cpp">
+      <Filter>Source Files\utki</Filter>
+    </ClCompile>
+    <ClCompile Include="utki\string.cpp">
+      <Filter>Source Files\utki</Filter>
+    </ClCompile>
+    <ClCompile Include="utki\time.cpp">
+      <Filter>Source Files\utki</Filter>
+    </ClCompile>
+    <ClCompile Include="utki\unicode.cpp">
+      <Filter>Source Files\utki</Filter>
+    </ClCompile>
+    <ClCompile Include="utki\util.cpp">
+      <Filter>Source Files\utki</Filter>
+    </ClCompile>
+    <ClCompile Include="papki\unzip\ioapi.cpp">
+      <Filter>Source Files\papki\unzip</Filter>
+    </ClCompile>
+    <ClCompile Include="papki\unzip\unzip.cpp">
+      <Filter>Source Files\papki\unzip</Filter>
+    </ClCompile>
+    <ClCompile Include="papki\file.cpp">
+      <Filter>Source Files\papki</Filter>
+    </ClCompile>
+    <ClCompile Include="papki\fs_file.cpp">
+      <Filter>Source Files\papki</Filter>
+    </ClCompile>
+    <ClCompile Include="papki\span_file.cpp">
+      <Filter>Source Files\papki</Filter>
+    </ClCompile>
+    <ClCompile Include="papki\util.cpp">
+      <Filter>Source Files\papki</Filter>
+    </ClCompile>
+    <ClCompile Include="papki\vector_file.cpp">
+      <Filter>Source Files\papki</Filter>
+    </ClCompile>
+    <ClCompile Include="papki\zip_file.cpp">
+      <Filter>Source Files\papki</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\adler32.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\compress.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\crc32.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\deflate.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzclose.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzlib.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzread.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzwrite.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\infback.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inffast.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inflate.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inftrees.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\trees.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\uncompr.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\zutil.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_arc.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_arrowhead.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_bezier_arc.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_bspline.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_color_rgba.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_curves.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_embedded_raster_fonts.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_gsv_text.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_image_filters.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_line_aa_basics.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_line_profile_aa.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_rounded_rect.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_sqrt_tables.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_trans_affine.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_trans_double_path.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_trans_single_path.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_trans_warp_magnifier.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_vcgen_bspline.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_vcgen_contour.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_vcgen_dash.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_vcgen_markers_term.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_vcgen_smooth_poly1.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_vcgen_stroke.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_vpgen_clip_polygon.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_vpgen_clip_polyline.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\agg_vpgen_segmentator.cpp">
+      <Filter>Source Files\agg</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\ctrl\agg_bezier_ctrl.cpp">
+      <Filter>Source Files\agg\ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\ctrl\agg_cbox_ctrl.cpp">
+      <Filter>Source Files\agg\ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\ctrl\agg_gamma_ctrl.cpp">
+      <Filter>Source Files\agg\ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\ctrl\agg_gamma_spline.cpp">
+      <Filter>Source Files\agg\ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\ctrl\agg_polygon_ctrl.cpp">
+      <Filter>Source Files\agg\ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\ctrl\agg_rbox_ctrl.cpp">
+      <Filter>Source Files\agg\ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\ctrl\agg_scale_ctrl.cpp">
+      <Filter>Source Files\agg\ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\ctrl\agg_slider_ctrl.cpp">
+      <Filter>Source Files\agg\ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="agg\ctrl\agg_spline_ctrl.cpp">
+      <Filter>Source Files\agg\ctrl</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

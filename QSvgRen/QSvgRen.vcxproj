@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{310FEE68-866B-4A86-B0DC-8BA01873AB27}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>$(DefaultQtVersion)</QtInstall>
+    <QtModules>core;quick;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>$(DefaultQtVersion)</QtInstall>
+    <QtModules>core;quick;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <OutDir>$(ProjectDir)</OutDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutDir>$(ProjectDir)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.\zlib;.\agg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.\zlib;.\agg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>QSVGREN_LIB;BUILD_STATIC;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>QSVGREN_LIB;BUILD_STATIC;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="agg\agg_arc.cpp" />
+    <ClCompile Include="agg\agg_arrowhead.cpp" />
+    <ClCompile Include="agg\agg_bezier_arc.cpp" />
+    <ClCompile Include="agg\agg_bspline.cpp" />
+    <ClCompile Include="agg\agg_color_rgba.cpp" />
+    <ClCompile Include="agg\agg_curves.cpp" />
+    <ClCompile Include="agg\agg_embedded_raster_fonts.cpp" />
+    <ClCompile Include="agg\agg_gsv_text.cpp" />
+    <ClCompile Include="agg\agg_image_filters.cpp" />
+    <ClCompile Include="agg\agg_line_aa_basics.cpp" />
+    <ClCompile Include="agg\agg_line_profile_aa.cpp" />
+    <ClCompile Include="agg\agg_rounded_rect.cpp" />
+    <ClCompile Include="agg\agg_sqrt_tables.cpp" />
+    <ClCompile Include="agg\agg_trans_affine.cpp" />
+    <ClCompile Include="agg\agg_trans_double_path.cpp" />
+    <ClCompile Include="agg\agg_trans_single_path.cpp" />
+    <ClCompile Include="agg\agg_trans_warp_magnifier.cpp" />
+    <ClCompile Include="agg\agg_vcgen_bspline.cpp" />
+    <ClCompile Include="agg\agg_vcgen_contour.cpp" />
+    <ClCompile Include="agg\agg_vcgen_dash.cpp" />
+    <ClCompile Include="agg\agg_vcgen_markers_term.cpp" />
+    <ClCompile Include="agg\agg_vcgen_smooth_poly1.cpp" />
+    <ClCompile Include="agg\agg_vcgen_stroke.cpp" />
+    <ClCompile Include="agg\agg_vpgen_clip_polygon.cpp" />
+    <ClCompile Include="agg\agg_vpgen_clip_polyline.cpp" />
+    <ClCompile Include="agg\agg_vpgen_segmentator.cpp" />
+    <ClCompile Include="agg\ctrl\agg_bezier_ctrl.cpp" />
+    <ClCompile Include="agg\ctrl\agg_cbox_ctrl.cpp" />
+    <ClCompile Include="agg\ctrl\agg_gamma_ctrl.cpp" />
+    <ClCompile Include="agg\ctrl\agg_gamma_spline.cpp" />
+    <ClCompile Include="agg\ctrl\agg_polygon_ctrl.cpp" />
+    <ClCompile Include="agg\ctrl\agg_rbox_ctrl.cpp" />
+    <ClCompile Include="agg\ctrl\agg_scale_ctrl.cpp" />
+    <ClCompile Include="agg\ctrl\agg_slider_ctrl.cpp" />
+    <ClCompile Include="agg\ctrl\agg_spline_ctrl.cpp" />
+    <ClCompile Include="cssom\om.cpp" />
+    <ClCompile Include="cssom\parser.cpp" />
+    <ClCompile Include="mikroxml\mikroxml.cpp" />
+    <ClCompile Include="papki\file.cpp" />
+    <ClCompile Include="papki\fs_file.cpp" />
+    <ClCompile Include="papki\span_file.cpp" />
+    <ClCompile Include="papki\unzip\ioapi.cpp" />
+    <ClCompile Include="papki\unzip\unzip.cpp" />
+    <ClCompile Include="papki\util.cpp" />
+    <ClCompile Include="papki\vector_file.cpp" />
+    <ClCompile Include="papki\zip_file.cpp" />
+    <ClCompile Include="svgdom\dom.cpp" />
+    <ClCompile Include="svgdom\elements\aspect_ratioed.cpp" />
+    <ClCompile Include="svgdom\elements\element.cpp" />
+    <ClCompile Include="svgdom\elements\filter.cpp" />
+    <ClCompile Include="svgdom\elements\gradients.cpp" />
+    <ClCompile Include="svgdom\elements\image_element.cpp" />
+    <ClCompile Include="svgdom\elements\rectangle.cpp" />
+    <ClCompile Include="svgdom\elements\referencing.cpp" />
+    <ClCompile Include="svgdom\elements\shapes.cpp" />
+    <ClCompile Include="svgdom\elements\structurals.cpp" />
+    <ClCompile Include="svgdom\elements\style.cpp" />
+    <ClCompile Include="svgdom\elements\styleable.cpp" />
+    <ClCompile Include="svgdom\elements\text_element.cpp" />
+    <ClCompile Include="svgdom\elements\transformable.cpp" />
+    <ClCompile Include="svgdom\elements\view_boxed.cpp" />
+    <ClCompile Include="svgdom\length.cpp" />
+    <ClCompile Include="svgdom\parser.cpp" />
+    <ClCompile Include="svgdom\util.cpp" />
+    <ClCompile Include="svgdom\util\cloner.cpp" />
+    <ClCompile Include="svgdom\util\finder_by_class.cpp" />
+    <ClCompile Include="svgdom\util\finder_by_id.cpp" />
+    <ClCompile Include="svgdom\util\finder_by_tag.cpp" />
+    <ClCompile Include="svgdom\util\stream_writer.cpp" />
+    <ClCompile Include="svgdom\util\style_stack.cpp" />
+    <ClCompile Include="svgdom\util\style_stack_cache.cpp" />
+    <ClCompile Include="svgdom\visitor.cpp" />
+    <ClCompile Include="svgren\canvas.cpp" />
+    <ClCompile Include="svgren\filter_applier.cpp" />
+    <ClCompile Include="svgren\render.cpp" />
+    <ClCompile Include="svgren\renderer.cpp" />
+    <ClCompile Include="svgren\surface.cpp" />
+    <ClCompile Include="svgren\util.cpp" />
+    <ClCompile Include="utki\debug.cpp" />
+    <ClCompile Include="utki\string.cpp" />
+    <ClCompile Include="utki\time.cpp" />
+    <ClCompile Include="utki\unicode.cpp" />
+    <ClCompile Include="utki\util.cpp" />
+    <ClCompile Include="zlib\adler32.c" />
+    <ClCompile Include="zlib\compress.c" />
+    <ClCompile Include="zlib\crc32.c" />
+    <ClCompile Include="zlib\deflate.c" />
+    <ClCompile Include="zlib\gzclose.c" />
+    <ClCompile Include="zlib\gzlib.c" />
+    <ClCompile Include="zlib\gzread.c" />
+    <ClCompile Include="zlib\gzwrite.c" />
+    <ClCompile Include="zlib\infback.c" />
+    <ClCompile Include="zlib\inffast.c" />
+    <ClCompile Include="zlib\inflate.c" />
+    <ClCompile Include="zlib\inftrees.c" />
+    <ClCompile Include="zlib\trees.c" />
+    <ClCompile Include="zlib\uncompr.c" />
+    <ClCompile Include="zlib\zutil.c" />
+    <ClInclude Include="agg\agg_alpha_mask_u8.h" />
+    <ClInclude Include="agg\agg_arc.h" />
+    <ClInclude Include="agg\agg_array.h" />
+    <ClInclude Include="agg\agg_arrowhead.h" />
+    <ClInclude Include="agg\agg_basics.h" />
+    <ClInclude Include="agg\agg_bezier_arc.h" />
+    <ClInclude Include="agg\agg_bitset_iterator.h" />
+    <ClInclude Include="agg\agg_blur.h" />
+    <ClInclude Include="agg\agg_bounding_rect.h" />
+    <ClInclude Include="agg\agg_bspline.h" />
+    <ClInclude Include="agg\agg_clip_liang_barsky.h" />
+    <ClInclude Include="agg\agg_color_gray.h" />
+    <ClInclude Include="agg\agg_color_rgba.h" />
+    <ClInclude Include="agg\agg_config.h" />
+    <ClInclude Include="agg\agg_conv_adaptor_vcgen.h" />
+    <ClInclude Include="agg\agg_conv_adaptor_vpgen.h" />
+    <ClInclude Include="agg\agg_conv_bspline.h" />
+    <ClInclude Include="agg\agg_conv_clip_polygon.h" />
+    <ClInclude Include="agg\agg_conv_clip_polyline.h" />
+    <ClInclude Include="agg\agg_conv_close_polygon.h" />
+    <ClInclude Include="agg\agg_conv_concat.h" />
+    <ClInclude Include="agg\agg_conv_contour.h" />
+    <ClInclude Include="agg\agg_conv_curve.h" />
+    <ClInclude Include="agg\agg_conv_dash.h" />
+    <ClInclude Include="agg\agg_conv_gpc.h" />
+    <ClInclude Include="agg\agg_conv_marker.h" />
+    <ClInclude Include="agg\agg_conv_marker_adaptor.h" />
+    <ClInclude Include="agg\agg_conv_segmentator.h" />
+    <ClInclude Include="agg\agg_conv_shorten_path.h" />
+    <ClInclude Include="agg\agg_conv_smooth_poly1.h" />
+    <ClInclude Include="agg\agg_conv_stroke.h" />
+    <ClInclude Include="agg\agg_conv_transform.h" />
+    <ClInclude Include="agg\agg_conv_unclose_polygon.h" />
+    <ClInclude Include="agg\agg_curves.h" />
+    <ClInclude Include="agg\agg_dda_line.h" />
+    <ClInclude Include="agg\agg_ellipse.h" />
+    <ClInclude Include="agg\agg_ellipse_bresenham.h" />
+    <ClInclude Include="agg\agg_embedded_raster_fonts.h" />
+    <ClInclude Include="agg\agg_font_cache_manager.h" />
+    <ClInclude Include="agg\agg_font_cache_manager2.h" />
+    <ClInclude Include="agg\agg_gamma_functions.h" />
+    <ClInclude Include="agg\agg_gamma_lut.h" />
+    <ClInclude Include="agg\agg_glyph_raster_bin.h" />
+    <ClInclude Include="agg\agg_gradient_lut.h" />
+    <ClInclude Include="agg\agg_gsv_text.h" />
+    <ClInclude Include="agg\agg_image_accessors.h" />
+    <ClInclude Include="agg\agg_image_filters.h" />
+    <ClInclude Include="agg\agg_line_aa_basics.h" />
+    <ClInclude Include="agg\agg_math.h" />
+    <ClInclude Include="agg\agg_math_stroke.h" />
+    <ClInclude Include="agg\agg_path_length.h" />
+    <ClInclude Include="agg\agg_path_storage.h" />
+    <ClInclude Include="agg\agg_path_storage_integer.h" />
+    <ClInclude Include="agg\agg_pattern_filters_rgba.h" />
+    <ClInclude Include="agg\agg_pixfmt_amask_adaptor.h" />
+    <ClInclude Include="agg\agg_pixfmt_base.h" />
+    <ClInclude Include="agg\agg_pixfmt_gray.h" />
+    <ClInclude Include="agg\agg_pixfmt_rgb.h" />
+    <ClInclude Include="agg\agg_pixfmt_rgba.h" />
+    <ClInclude Include="agg\agg_pixfmt_rgb_packed.h" />
+    <ClInclude Include="agg\agg_pixfmt_transposer.h" />
+    <ClInclude Include="agg\agg_rasterizer_cells_aa.h" />
+    <ClInclude Include="agg\agg_rasterizer_compound_aa.h" />
+    <ClInclude Include="agg\agg_rasterizer_outline.h" />
+    <ClInclude Include="agg\agg_rasterizer_outline_aa.h" />
+    <ClInclude Include="agg\agg_rasterizer_scanline_aa.h" />
+    <ClInclude Include="agg\agg_rasterizer_scanline_aa_nogamma.h" />
+    <ClInclude Include="agg\agg_rasterizer_sl_clip.h" />
+    <ClInclude Include="agg\agg_renderer_base.h" />
+    <ClInclude Include="agg\agg_renderer_markers.h" />
+    <ClInclude Include="agg\agg_renderer_mclip.h" />
+    <ClInclude Include="agg\agg_renderer_outline_aa.h" />
+    <ClInclude Include="agg\agg_renderer_outline_image.h" />
+    <ClInclude Include="agg\agg_renderer_primitives.h" />
+    <ClInclude Include="agg\agg_renderer_raster_text.h" />
+    <ClInclude Include="agg\agg_renderer_scanline.h" />
+    <ClInclude Include="agg\agg_rendering_buffer.h" />
+    <ClInclude Include="agg\agg_rendering_buffer_dynarow.h" />
+    <ClInclude Include="agg\agg_rounded_rect.h" />
+    <ClInclude Include="agg\agg_scanline_bin.h" />
+    <ClInclude Include="agg\agg_scanline_boolean_algebra.h" />
+    <ClInclude Include="agg\agg_scanline_p.h" />
+    <ClInclude Include="agg\agg_scanline_storage_aa.h" />
+    <ClInclude Include="agg\agg_scanline_storage_bin.h" />
+    <ClInclude Include="agg\agg_scanline_u.h" />
+    <ClInclude Include="agg\agg_shorten_path.h" />
+    <ClInclude Include="agg\agg_simul_eq.h" />
+    <ClInclude Include="agg\agg_span_allocator.h" />
+    <ClInclude Include="agg\agg_span_converter.h" />
+    <ClInclude Include="agg\agg_span_gouraud.h" />
+    <ClInclude Include="agg\agg_span_gouraud_gray.h" />
+    <ClInclude Include="agg\agg_span_gouraud_rgba.h" />
+    <ClInclude Include="agg\agg_span_gradient.h" />
+    <ClInclude Include="agg\agg_span_gradient_alpha.h" />
+    <ClInclude Include="agg\agg_span_gradient_contour.h" />
+    <ClInclude Include="agg\agg_span_gradient_image.h" />
+    <ClInclude Include="agg\agg_span_image_filter.h" />
+    <ClInclude Include="agg\agg_span_image_filter_gray.h" />
+    <ClInclude Include="agg\agg_span_image_filter_rgb.h" />
+    <ClInclude Include="agg\agg_span_image_filter_rgba.h" />
+    <ClInclude Include="agg\agg_span_interpolator_adaptor.h" />
+    <ClInclude Include="agg\agg_span_interpolator_linear.h" />
+    <ClInclude Include="agg\agg_span_interpolator_persp.h" />
+    <ClInclude Include="agg\agg_span_interpolator_trans.h" />
+    <ClInclude Include="agg\agg_span_pattern_gray.h" />
+    <ClInclude Include="agg\agg_span_pattern_rgb.h" />
+    <ClInclude Include="agg\agg_span_pattern_rgba.h" />
+    <ClInclude Include="agg\agg_span_solid.h" />
+    <ClInclude Include="agg\agg_span_subdiv_adaptor.h" />
+    <ClInclude Include="agg\agg_trans_affine.h" />
+    <ClInclude Include="agg\agg_trans_bilinear.h" />
+    <ClInclude Include="agg\agg_trans_double_path.h" />
+    <ClInclude Include="agg\agg_trans_perspective.h" />
+    <ClInclude Include="agg\agg_trans_single_path.h" />
+    <ClInclude Include="agg\agg_trans_viewport.h" />
+    <ClInclude Include="agg\agg_trans_warp_magnifier.h" />
+    <ClInclude Include="agg\agg_vcgen_bspline.h" />
+    <ClInclude Include="agg\agg_vcgen_contour.h" />
+    <ClInclude Include="agg\agg_vcgen_dash.h" />
+    <ClInclude Include="agg\agg_vcgen_markers_term.h" />
+    <ClInclude Include="agg\agg_vcgen_smooth_poly1.h" />
+    <ClInclude Include="agg\agg_vcgen_stroke.h" />
+    <ClInclude Include="agg\agg_vcgen_vertex_sequence.h" />
+    <ClInclude Include="agg\agg_vertex_sequence.h" />
+    <ClInclude Include="agg\agg_vpgen_clip_polygon.h" />
+    <ClInclude Include="agg\agg_vpgen_clip_polyline.h" />
+    <ClInclude Include="agg\agg_vpgen_segmentator.h" />
+    <ClInclude Include="agg\ctrl\agg_bezier_ctrl.h" />
+    <ClInclude Include="agg\ctrl\agg_cbox_ctrl.h" />
+    <ClInclude Include="agg\ctrl\agg_ctrl.h" />
+    <ClInclude Include="agg\ctrl\agg_gamma_ctrl.h" />
+    <ClInclude Include="agg\ctrl\agg_gamma_spline.h" />
+    <ClInclude Include="agg\ctrl\agg_polygon_ctrl.h" />
+    <ClInclude Include="agg\ctrl\agg_rbox_ctrl.h" />
+    <ClInclude Include="agg\ctrl\agg_scale_ctrl.h" />
+    <ClInclude Include="agg\ctrl\agg_slider_ctrl.h" />
+    <ClInclude Include="agg\ctrl\agg_spline_ctrl.h" />
+    <ClInclude Include="agg\util\agg_color_conv.h" />
+    <ClInclude Include="agg\util\agg_color_conv_rgb16.h" />
+    <ClInclude Include="agg\util\agg_color_conv_rgb8.h" />
+    <ClInclude Include="cssom\om.hpp" />
+    <ClInclude Include="cssom\parser.hpp" />
+    <ClInclude Include="mikroxml\mikroxml.hpp" />
+    <ClInclude Include="papki\file.hpp" />
+    <ClInclude Include="papki\fs_file.hpp" />
+    <ClInclude Include="papki\root_dir.hpp" />
+    <ClInclude Include="papki\span_file.hpp" />
+    <ClInclude Include="papki\unzip\crypt.hxx" />
+    <ClInclude Include="papki\unzip\ioapi.hxx" />
+    <ClInclude Include="papki\unzip\unzip.hxx" />
+    <ClInclude Include="papki\util.hpp" />
+    <ClInclude Include="papki\vector_file.hpp" />
+    <ClInclude Include="papki\zip_file.hpp" />
+    <ClInclude Include="r4\matrix.hpp" />
+    <ClInclude Include="r4\quaternion.hpp" />
+    <ClInclude Include="r4\rectangle.hpp" />
+    <ClInclude Include="r4\segment2.hpp" />
+    <ClInclude Include="r4\vector.hpp" />
+    <ClInclude Include="svgdom\config.hpp" />
+    <ClInclude Include="svgdom\dom.hpp" />
+    <ClInclude Include="svgdom\elements\aspect_ratioed.hpp" />
+    <ClInclude Include="svgdom\elements\container.hpp" />
+    <ClInclude Include="svgdom\elements\coordinate_units.hpp" />
+    <ClInclude Include="svgdom\elements\element.hpp" />
+    <ClInclude Include="svgdom\elements\filter.hpp" />
+    <ClInclude Include="svgdom\elements\gradients.hpp" />
+    <ClInclude Include="svgdom\elements\image_element.hpp" />
+    <ClInclude Include="svgdom\elements\rectangle.hpp" />
+    <ClInclude Include="svgdom\elements\referencing.hpp" />
+    <ClInclude Include="svgdom\elements\shapes.hpp" />
+    <ClInclude Include="svgdom\elements\structurals.hpp" />
+    <ClInclude Include="svgdom\elements\style.hpp" />
+    <ClInclude Include="svgdom\elements\styleable.hpp" />
+    <ClInclude Include="svgdom\elements\text_element.hpp" />
+    <ClInclude Include="svgdom\elements\transformable.hpp" />
+    <ClInclude Include="svgdom\elements\view_boxed.hpp" />
+    <ClInclude Include="svgdom\length.hpp" />
+    <ClInclude Include="svgdom\malformed_svg_error.hpp" />
+    <ClInclude Include="svgdom\parser.hxx" />
+    <ClInclude Include="svgdom\util.hxx" />
+    <ClInclude Include="svgdom\util\casters.hpp" />
+    <ClInclude Include="svgdom\util\cloner.hpp" />
+    <ClInclude Include="svgdom\util\finder_by_class.hpp" />
+    <ClInclude Include="svgdom\util\finder_by_id.hpp" />
+    <ClInclude Include="svgdom\util\finder_by_tag.hpp" />
+    <ClInclude Include="svgdom\util\stream_writer.hpp" />
+    <ClInclude Include="svgdom\util\style_stack.hpp" />
+    <ClInclude Include="svgdom\util\style_stack_cache.hpp" />
+    <ClInclude Include="svgdom\visitor.hpp" />
+    <ClInclude Include="svgren\canvas.hxx" />
+    <ClInclude Include="svgren\config.hxx" />
+    <ClInclude Include="svgren\filter_applier.hxx" />
+    <ClInclude Include="svgren\render.hpp" />
+    <ClInclude Include="svgren\renderer.hxx" />
+    <ClInclude Include="svgren\surface.hxx" />
+    <ClInclude Include="svgren\util.hxx" />
+    <ClInclude Include="utki\config.hpp" />
+    <ClInclude Include="utki\debug.hpp" />
+    <ClInclude Include="utki\destructable.hpp" />
+    <ClInclude Include="utki\fast_float\ascii_number.hxx" />
+    <ClInclude Include="utki\fast_float\decimal_to_binary.hxx" />
+    <ClInclude Include="utki\fast_float\fast_float.hxx" />
+    <ClInclude Include="utki\fast_float\fast_table.hxx" />
+    <ClInclude Include="utki\fast_float\float_common.hxx" />
+    <ClInclude Include="utki\fast_float\parse_number.hxx" />
+    <ClInclude Include="utki\fast_float\simple_decimal_conversion.hxx" />
+    <ClInclude Include="utki\flags.hpp" />
+    <ClInclude Include="utki\linq.hpp" />
+    <ClInclude Include="utki\macros.hpp" />
+    <ClInclude Include="utki\math.hpp" />
+    <ClInclude Include="utki\shared.hpp" />
+    <ClInclude Include="utki\singleton.hpp" />
+    <ClInclude Include="utki\span.hpp" />
+    <ClInclude Include="utki\spin_lock.hpp" />
+    <ClInclude Include="utki\string.hpp" />
+    <ClInclude Include="utki\time.hpp" />
+    <ClInclude Include="utki\tree.hpp" />
+    <ClInclude Include="utki\types.hpp" />
+    <ClInclude Include="utki\unicode.hpp" />
+    <ClInclude Include="utki\util.hpp" />
+    <ClInclude Include="utki\windows.hpp" />
+    <ClInclude Include="zlib\crc32.h" />
+    <ClInclude Include="zlib\deflate.h" />
+    <ClInclude Include="zlib\gzguts.h" />
+    <ClInclude Include="zlib\inffast.h" />
+    <ClInclude Include="zlib\inffixed.h" />
+    <ClInclude Include="zlib\inflate.h" />
+    <ClInclude Include="zlib\inftrees.h" />
+    <ClInclude Include="zlib\trees.h" />
+    <ClInclude Include="zlib\zconf.h" />
+    <ClInclude Include="zlib\zlib.h" />
+    <ClInclude Include="zlib\zutil.h" />
+    <ClInclude Include="QSvgRen.h" />
+    <ClCompile Include="QSvgRen.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
