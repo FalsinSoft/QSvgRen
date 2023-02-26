@@ -1,7 +1,8 @@
 #include <QFile>
 #include <QScreen>
 #include <QApplication>
-#include <svgren/render.hpp>
+#include <QQuickImageProvider>
+#include "svgren/render.hpp"
 #include "QSvgRen.h"
 
 QSvgRen::QSvgRen() : QQuickImageProvider(QQuickImageProvider::Image)
