@@ -151,7 +151,14 @@ public:
 	flags& set(enum_type flag, bool value = true) noexcept
 	{
 		ASSERT(flag < enum_type::enum_size)
-		this->bitset.set(size_t(flag), value);
+		// flag index cannot exceed the bitset size since
+		// it is taken from enum, so just wrap it into a
+		// try-catch and ignore the exception to silence linter
+		try {
+			this->bitset.set(size_t(flag), value);
+		} catch (...) {
+			ASSERT(false)
+		}
 		return *this;
 	}
 
@@ -177,7 +184,15 @@ public:
 	 */
 	flags& clear(enum_type flag) noexcept
 	{
-		this->bitset.reset(size_t(flag));
+		ASSERT(flag < enum_type::enum_size)
+		// flag index cannot exceed the bitset size since
+		// it is taken from enum, so just wrap it into a
+		// try-catch and ignore the exception to silence linter
+		try {
+			this->bitset.reset(size_t(flag));
+		} catch (...) {
+			ASSERT(false)
+		}
 		return *this;
 	}
 
