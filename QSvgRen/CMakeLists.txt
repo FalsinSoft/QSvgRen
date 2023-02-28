@@ -7,6 +7,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets Quick)
 
@@ -349,15 +350,14 @@ add_library(QSvgRen STATIC
 )
 
 target_include_directories(QSvgRen PRIVATE
-    .
-    agg/
-    zlib/
+    ${CMAKE_CURRENT_SOURCE_DIR}/agg/
+    ${CMAKE_CURRENT_SOURCE_DIR}/ zlib/
 )
 
-target_link_libraries(QSvgRen PRIVATE
-    Qt::Core
-    Qt::Gui
-    Qt::Widgets
-    Qt::Quick
+target_include_directories(QSvgRen PRIVATE
+    ${Qt6Core_INCLUDE_DIRS}
+    ${Qt6Gui_INCLUDE_DIRS}
+    ${Qt6Widgets_INCLUDE_DIRS}
+    ${Qt6Quick_INCLUDE_DIRS}
 )
 target_compile_definitions(QSvgRen PRIVATE QSVGREN_LIBRARY)
