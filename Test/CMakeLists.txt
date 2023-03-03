@@ -18,7 +18,7 @@ qt_add_executable(QSvgRenTest
 target_link_libraries(QSvgRenTest PRIVATE Qt6::Core Qt6::Widgets Qt6::Quick)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../QSvgRen)
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../QSvgRen build)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../QSvgRen QSvgRen)
 target_link_libraries(QSvgRenTest PRIVATE QSvgRen)
 
 if(ANDROID)
