@@ -1,8 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
 
-# This is needed because QtCreator clean the CMAKE_C_COMPILER property in the current configuration
-set(CMAKE_C_COMPILER ${CMAKE_CXX_COMPILER})
-
 project(QSvgRen LANGUAGES C CXX)
 
 set(CMAKE_AUTOUIC ON)
@@ -14,7 +11,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets Quick)
 
-add_library(QSvgRen SHARED
+add_library(${PROJECT_NAME} SHARED
     QSvgRen.cpp
     QSvgRen.h
     agg/agg_alpha_mask_u8.h
@@ -352,17 +349,17 @@ add_library(QSvgRen SHARED
     zlib/zutil.c
 )
 
-target_include_directories(QSvgRen PRIVATE
+target_include_directories(${PROJECT_NAME} PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/agg/
     ${CMAKE_CURRENT_SOURCE_DIR}/ zlib/
 )
-target_link_libraries(QSvgRen PRIVATE
+target_link_libraries(${PROJECT_NAME} PRIVATE
     Qt6::Core
     Qt6::Gui
     Qt6::Widgets
     Qt6::Quick
 )
-target_compile_definitions(QSvgRen PRIVATE
+target_compile_definitions(${PROJECT_NAME} PRIVATE
     QSVGREN_DLL
     QSVGREN_EXPORT_LIBRARY
 )
